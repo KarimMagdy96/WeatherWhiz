@@ -22,7 +22,42 @@
     />
     <!-- styles -->
     <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- js -->
+    <script type="module" src="assets/js/app.js"></script>
+    <script type="module" src="assets/js/route.js"></script>
     <title>WeatherWhiz</title>
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <div class="container">
+        <img
+          src="./assets/images/logo.png"
+          alt="logo"
+          width="364"
+          height="58"
+        />
+        <div class="search-view" data-search-view>
+          <div class="search-wrapper">
+            <input
+              type="search"
+              name="search"
+              class="search-field"
+              placeholder="Search City..."
+              autocomplete="off"
+              data-search-field
+            />
+            <span class="m-icon">Search</span>
+
+            <button
+              class="icon-btn leading-icon has-state"
+              aria-label="close search"
+              data-search-toggler
+            >
+              <span class="m-icon">arrow_back</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+  </body>
 </html>
