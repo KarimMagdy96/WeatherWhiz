@@ -30,12 +30,14 @@
   <body>
     <header class="header">
       <div class="container">
-        <img
-          src="./assets/images/logo.png"
-          alt="logo"
-          width="364"
-          height="58"
-        />
+        <a href="#" class="logo">
+          <img
+            src="./assets/images/logo.png"
+            alt="logo"
+            width="150"
+            height="58"
+          />
+        </a>
         <div class="search-view" data-search-view>
           <div class="search-wrapper">
             <input
@@ -56,6 +58,36 @@
               <span class="m-icon">arrow_back</span>
             </button>
           </div>
+          <div class="search-result" data-search-result>
+            <ul class="view-list" data-search-list>
+              <li class="view-item">
+                <span class="m-icon">location_on</span>
+                <div>
+                  <p class="item-title">London</p>
+                  <p class="label-2 item-subtitle">state of London, GB</p>
+                </div>
+                <a href="#" class="item-link has-state" data-search-toggler>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="header-actions">
+          <button
+            class="has-state icon-btn"
+            aria-label="open search"
+            data-search-toggler
+          >
+            <span class="m-icon">search</span>
+          </button>
+          <a
+            href="#/current-location"
+            class="btn-primary has-state"
+            data-current-location-btn
+          >
+            <span class="m-icon">my_location</span>
+            <span class="span">Current Location</span>
+          </a>
         </div>
       </div>
     </header>
